@@ -11,14 +11,12 @@ function TodoForm() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("form submitted");
     let data = {
       id: Date.now(),
       value: todo,
     };
     setTodos([...todos, data]);
     setTodo("");
- 
   };
   return (
     <form
